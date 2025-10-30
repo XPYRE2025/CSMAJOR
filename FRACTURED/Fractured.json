@@ -2124,7 +2124,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.4950840073749211,
+        "zoomFactor": 0.2817259932079744,
         "windowMask": false,
         "selectedLayer": ""
       },
@@ -16710,17 +16710,6 @@
                 "-",
                 "25"
               ]
-            },
-            {
-              "type": {
-                "value": "PlatformBehavior::MaxSpeed"
-              },
-              "parameters": [
-                "Character",
-                "PlatformerObject",
-                "=",
-                "0"
-              ]
             }
           ]
         },
@@ -17149,12 +17138,6 @@
                         "=",
                         "\"Attack1\""
                       ]
-                    },
-                    {
-                      "type": {
-                        "value": "BuiltinCommonInstructions::Once"
-                      },
-                      "parameters": []
                     }
                   ],
                   "actions": [
@@ -17176,18 +17159,6 @@
                         "Animation",
                         "=",
                         "\"Attack1\""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "Create"
-                      },
-                      "parameters": [
-                        "",
-                        "Hitbox",
-                        "Character.PointX(\"Attack\") + Character.Variable(Direction)",
-                        "Character.PointY(\"Attack\") - 30",
-                        ""
                       ]
                     }
                   ],
@@ -17214,31 +17185,6 @@
                             "SwrdFX"
                           ]
                         }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "AnimatableCapability::AnimatableBehavior::HasAnimationEnded"
-                      },
-                      "parameters": [
-                        "Character",
-                        "Animation"
-                      ]
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "Delete"
-                      },
-                      "parameters": [
-                        "Hitbox",
-                        ""
                       ]
                     }
                   ]
